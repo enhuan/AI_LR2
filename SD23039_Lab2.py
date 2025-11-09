@@ -79,7 +79,7 @@ def run_ga(pop_size: int, length: int, target_ones: int, max_return: float, gene
 
 # --- STREAMLIT UI ---
 
-st.set_page_config(page_title="Genetic Algorithm Bit Pattern Search", page_icon="🧬", layout="wide")
+st.set_page_config(page_title="Genetic Algorithm: Bit Pattern Search", page_icon="🧬", layout="wide")
 
 st.title("🧬 Genetic Algorithm Bit Pattern Search")
 
@@ -129,4 +129,5 @@ if run_btn:
         st.markdown("#### Optimal Bit Pattern")
         st.code("".join(map(str, results['best_individual'])))
 else:
+
     st.info("Adjust parameters in the sidebar and click ▶️ to begin.")
